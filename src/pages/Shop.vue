@@ -159,6 +159,6 @@ import WhatsAppIcon from "../components/icons/WhatsAppIcon.vue";
 }
 
 .animate-bottom {
-  animation: slideUp 1s ease-in-out forwards;
+  animation: slideUp 0.8s ease-in-out forwards;
 }
 </style>
