@@ -53,9 +53,9 @@ import WhatsAppIcon from "../components/icons/WhatsAppIcon.vue";
       >
         <div class="container">
           <div class="w-full flex flex-col gap-3">
-            <div class="flex items-center flex-col justify-center gap-3 mb-4">
+            <div class="flex items-center flex-col justify-center gap-3 mb-4 pt-[10px] ">
               <h2
-                class="md:text-[24px] text-[20px] text-center font-semibold capitalize"
+                class="md:text-[30px] text-[20px] text-center text-gray-900 font-semibold capitalize"
               >
                 Featured Category
               </h2>
@@ -73,13 +73,9 @@ import WhatsAppIcon from "../components/icons/WhatsAppIcon.vue";
               </div>
             </div>
 
-            <div
-              class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 md:gap-5 sm:gap-4 gap-3 w-full"
-            >
+            <div class="grid lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 md:gap-5 sm:gap-4 gap-3 w-[90%] mx-auto pb-[20px]" >
               <!-- single category -->
-              <div
-                class="w-full h-[200px] shadow-lg rounded-xl bg-center bg-cover bg-[url('/image/starting.webp')] relative flex justify-center items-end px-2 py-4"
-              >
+              <div v-for="i in 5" class="w-full h-[200px] shadow-lg rounded-xl bg-center bg-cover bg-[url('/image/starting.webp')] relative flex justify-center items-end px-2 py-4" >
                 <span
                   class="sm:text-2xl text-xl font-medium capitalize text-[white] text-shadow z-20"
                 >
@@ -87,9 +83,10 @@ import WhatsAppIcon from "../components/icons/WhatsAppIcon.vue";
                 </span>
 
                 <div
-                  class="absolute shadow-lg rounded-xl z-10 bottom-0 gradient-color left-0 w-full h-full"
-                ></div>
+                  class="absolute shadow-lg rounded-xl z-10 bottom-0 gradient-color left-0 w-full h-full">
+                </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -112,6 +109,6 @@ import WhatsAppIcon from "../components/icons/WhatsAppIcon.vue";
 }
 
 .animate-bottom {
-  animation: slideUp 0.8s ease-in-out forwards;
+  animation: slideUp 1.5s ease-in-out forwards;
 }
 </style>
