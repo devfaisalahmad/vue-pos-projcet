@@ -4,6 +4,7 @@ const Home = () => import("../pages/Home.vue");
 const Shop = () => import("../pages/Shop.vue");
 const Drawar = () => import("../pages/Drawar.vue");
 
+
 const routes = [
   {
     path: "/",
@@ -22,9 +23,26 @@ const routes = [
   },
 ];
 
+import { type IStaticMethods } from "preline/preline";
+declare global {
+  interface Window {
+    HSStaticMethods: IStaticMethods;
+  }
+}
+
 const router = createRouter({
   history: createWebHistory(),
   routes,
 });
+
+
+router.afterEach((to, from, failure) => {
+  if (!failure) {
+    setTimeout(() => {
+      window.HSStaticMethods.autoInit();
+    }, 100)
+  }
+});
+
 
 export default router;

@@ -7,10 +7,8 @@ export default {
   ],
   theme: {
     extend: {},
-    colors: {
-      primary: "#6FD943",
-      // secondary: "",
-    },
   },
-  plugins: ["preline/plugin"],
+  plugins: [
+    require("preline/plugin", "forms"),
+  ],
 };
