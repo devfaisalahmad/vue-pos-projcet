@@ -42,9 +42,7 @@ import WhatsAppIcon from "../components/icons/WhatsAppIcon.vue";
       </nav>
 
       <!-- drowar -->
-      <div
-        class="w-full bg-[#f5f5f5] h-[350px] rounded-tl-[40px] rounded-tr-[40px] z-30 border-t border-[#f0f0f0] py-4"
-      >
+      <div class="w-full bg-[#f5f5f5] h-[350px] rounded-tl-[40px] rounded-tr-[40px] z-30 border-t border-[#f0f0f0] py-4" >
         <div class="container">
           <div class="w-full flex flex-col gap-3">
             <div class="text-center">
@@ -57,11 +55,10 @@ import WhatsAppIcon from "../components/icons/WhatsAppIcon.vue";
               <div
                 class="h-[170px] w-[170px] shadow-lg rounded-xl bg-center bg-cover bg-[url('/image/pic-1.png')] relative flex justify-center items-end px-2 py-4"
               >
-                <span
-                  class="text-2xl font-medium capitalize text-[white] text-shadow z-20"
-                >
+                <span class="text-2xl font-medium capitalize text-[white] text-shadow z-20">
                   Kantine
                 </span>
+
                 <div
                   class="absolute shadow-lg rounded-xl z-10 bottom-0 gradient-color left-0 w-full h-[170px]"
                 ></div>
@@ -106,7 +103,11 @@ import WhatsAppIcon from "../components/icons/WhatsAppIcon.vue";
           </div>
         </div>
       </div>
+
+
     </div>
     <div class="absolute z-20 top-0 w-full h-full bg-[#00000065]"></div>
   </div>
 </template>
+
+

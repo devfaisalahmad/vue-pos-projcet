@@ -7,6 +7,7 @@ export default {
   ],
   theme: {
     extend: {},
+    
   },
   plugins: [
     require("preline/plugin", "forms"),
