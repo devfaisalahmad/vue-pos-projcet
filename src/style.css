@@ -11,15 +11,21 @@ body {
 }
 
 .container {
-  @apply !w-full !px-[.75rem] mx-auto 2xl:!max-w-[1200px] xl:!max-w-[1200px] lg:!max-w-[992px] md:!max-w-[980px] sm:!max-w-[576px];
+  @apply !w-full !px-[.75rem] mx-auto 2xl:!max-w-[1500px] xl:!max-w-[1200px] 
+   lg:!max-w-[992px] md:!max-w-[980px] sm:!max-w-[576px];
 }
 
 .gradient-color {
   background: linear-gradient(180deg, #0000, #0000 50%, #0000009e);
 }
 
-
 .text-shadow {
   text-shadow: 0 0 4px #000;
 }
-
+.custom {
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 10000;
+}
