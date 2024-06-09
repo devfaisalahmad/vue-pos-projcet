@@ -2,8 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const Home = () => import("../pages/Home.vue");
 const Shop = () => import("../pages/Shop.vue");
-const Drawar = () => import("../pages/Drawar.vue");
-
+const Products = () => import("../pages/Products.vue");
 
 const routes = [
   {
@@ -17,9 +16,9 @@ const routes = [
     component: Shop,
   },
   {
-    path: "/drawar",
-    name: "drawar",
-    component: Drawar,
+    path: "/products",
+    name: "products",
+    component: Products,
   },
 ];
 
@@ -35,14 +34,12 @@ const router = createRouter({
   routes,
 });
 
-
 router.afterEach((to, from, failure) => {
   if (!failure) {
     setTimeout(() => {
       window.HSStaticMethods.autoInit();
-    }, 100)
+    }, 100);
   }
 });
-
 
 export default router;
